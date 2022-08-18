@@ -4,3 +4,8 @@
     font-weight: 660;
     font-family: Arial, Helvetica, sans-serif
 }
+
+.App-footer {
+    text-align: center;
+    margin: 30px 0;  
+}
