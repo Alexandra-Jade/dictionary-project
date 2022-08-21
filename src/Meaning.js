@@ -12,7 +12,7 @@ return (
     {definition.definition}
     <br/>
     
-    <em>{definition.examples}</em>
+    <em>{definition.example}</em>
     </p>
     </div>
      )
