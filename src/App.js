@@ -6,10 +6,10 @@ function App() {
     <div className="App">
       <div className="container">
       <header className="App-header">
-      Hello I'm a Dictionary
-      <div>
-      <a href="https://visionary-sprite-04f6dd.netlify.app/" className="btn btn-primary">Click Me</a>
-      </div>
+      <h1><strong>Dictionary</strong>
+  </h1>
+  <h2> <em>Search for </em></h2>
+ 
       </header>
       </div>
       <main className="text-center">
