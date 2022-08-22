@@ -8,11 +8,11 @@ function App() {
       <header className="App-header">
       <h1><strong>Dictionary</strong>
   </h1>
-  <h2> <em>Search for </em></h2>
+  
  
       </header>
       </div>
-      <main className="text-center">
+      <main className="text">
         <Dictionary defaultKeyword="sunset" />
       </main>
       
