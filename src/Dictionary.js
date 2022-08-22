@@ -3,41 +3,58 @@ import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
 
-export default function Dictionary() {
+export default function Dictionary(props) {
 
-    let [keyword, setKeyword] = useState("");
+    let [keyword, setKeyword] = useState(props.defaultKeyword);
     let [results, setResults]= useState(null );
+    let [loaded, setLoaded] = useState(false);
 
     function handelResponse(response) { 
         setResults(response.data[0])
-        console.log(response.data[0].meanings[0].definitions[0].definition);
-
-
     }
 
-    function search(event) {
+     function search() {
+         // documentation:  https://dictionaryapi.dev/
+         let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+         axios.get(apiUrl).then(handelResponse);
+
+     }
+
+    function handleSubmit(event) {
         event.preventDefault();
-        // documentation:  https://dictionaryapi.dev/
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-        axios.get(apiUrl).then(handelResponse);
+        search();
 
     }
 
-
+function load() {
+   setLoaded(true);
+   search(); 
+}
 
 
 
     function handleKeywordChange(event) {
         setKeyword(event.target.value);
     }
+    if(loaded) {
+        return (
+            <div className="Dictionary">
+                <section>
+                    <h1> What are you looking for?</h1>
+                <form onSubmit={handleSubmit} >
+                    <input type="search" onChange={handleKeywordChange} defaultValue={props.defaultKeyword} />
+                </form>
+                <div className="hint">
+                    suggested words:sunset,wine, yoga, plant
+                </div>
+                </section>
+                <Results results={results} />
+            </div>
+        );
+    } else {
+        load();
+        return "Loading";
+    }
 
-    return (
-        <div className="Dictionary">
-            <form onSubmit={search} >
-                <input type="search" onChange={handleKeywordChange} />
-            </form>
-            <Results results={results} />
-        </div>
-    )
 
 }
