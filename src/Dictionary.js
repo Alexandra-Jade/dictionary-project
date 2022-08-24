@@ -61,8 +61,10 @@ function load() {
                     suggested words:sunset,wine, yoga, plant
                 </div>
                 </section>
+                
                 <Results results={results} />
                 <Photos photos={photos}/>
+                
             </div>
         );
     } else {

@@ -1,8 +1,10 @@
 .Meaning h3 {
 
+    margin-bottom: 20px;
     font-size:  24px;
     line-height: 1.5px;
     font-weight: bold;
+    color: #6991ee;
 }
 
 .Meaning .example {

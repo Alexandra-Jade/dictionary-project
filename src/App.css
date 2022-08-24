@@ -1,6 +1,32 @@
 body {
-    background-color: #e9f1ff;
-}
+   
+        background: linear-gradient(-45deg, #fbdbd2, #ffe2ed, #cfdeff, #dbfcf4);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        
+
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+    .bookTitle {
+display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: none;
+    }
+
 
 a  {
     color:#7292dc
@@ -11,12 +37,14 @@ a  {
 
 }
 
-.App-header {
-    margin:20px auto;
+.App-header h1 {
+    color: #3a5daf;
+    margin-top: -15px;
     text-align: center;
-    font-size: xx-large;
-    font-weight: 660;
-    font-family: Arial, Helvetica, sans-serif
+    font-size: 80px;
+    font-weight: 900;
+    font-family: monospace;
+ 
 }
 
 .App-footer {

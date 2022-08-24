@@ -3,9 +3,17 @@
     padding: 0;
 }
 
-.Synonyms li {
-    font-size: 13px;
-    display: inline-block;
-    padding-right:10px;
+
+.Synonyms button {
     line-height: 1.5;
+    background-color: #3a5daf;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #3a5daf;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    padding: 4px 14px;
+    font-size: 15px;
 }
+
