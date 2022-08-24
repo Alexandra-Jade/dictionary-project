@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
+import { MagicSpinner } from "react-spinners-kit";
+
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
@@ -65,7 +67,11 @@ function load() {
         );
     } else {
         load();
-        return "Loading";
+        return (
+            <MagicSpinner />
+
+        );
+
     }
 
 

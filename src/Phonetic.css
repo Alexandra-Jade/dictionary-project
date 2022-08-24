@@ -1,9 +1,13 @@
 .Phonetic {
     margin-bottom: 20px 0px;
 
-
 }
 
+
+.Phonetic .audio-player {
+    max-width: 70%;
+    color: red;
+  }
 .Phonetic a {
     border: 1px solid #ddd;
     text-decoration: none;
@@ -21,6 +25,16 @@
 }
 
 .Phonetic .text {
+  
     opacity:0.5;
-    font-weight: bold;
+    font-weight: italic;
 }
+
+.Phonetic, .audio-player {
+    max-width: 60%;
+}
+
+.audio-player::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #94b3fd;
+     }
