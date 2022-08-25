@@ -38,9 +38,10 @@ a  {
 }
 
 .App-header h1 {
+    display: flex;
+  justify-content: center;
     color: #3a5daf;
     margin-top: -15px;
-    text-align: center;
     font-size: 80px;
     font-weight: 900;
     font-family: monospace;
