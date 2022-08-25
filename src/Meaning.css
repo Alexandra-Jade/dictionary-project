@@ -8,9 +8,11 @@
 }
 
 .Meaning .example {
-    color: #3a5daf;
+   
     font-size:  15px;
     opacity: 0.7;
     font-style: italic;
-    margin-top: 10px;
+    color: #2c488a;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

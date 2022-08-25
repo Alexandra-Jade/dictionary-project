@@ -6,6 +6,7 @@
 }
 
 .Dictionary section { 
+    
     background-color: white;
     padding: 30px;
     border-radius: 6px;
@@ -15,6 +16,7 @@
 }
 
 .Dictionary input {
+    
     width:100%;
     border-radius: 6px;
     padding: 6px 4px;
@@ -23,7 +25,9 @@
 }
 
 .Dictionary .hint {
-    font-size: 11px;
+    color: #2c488a;
+    font-size: 13px;
     margin-top: 5px;
+  
 }
 

@@ -34,7 +34,7 @@
     max-width: 60%;
 }
 
-.audio-player::-webkit-media-controls-play-button,
-     audio::-webkit-media-controls-panel {
+.audio-player ::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel   {
      background-color: #94b3fd;
      }
